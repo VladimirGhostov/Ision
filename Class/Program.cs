@@ -6,7 +6,7 @@ namespace Ision.Class
         static void Main()
         {
             ApplicationConfiguration.Initialize();
-            Application.Run(new start_form());
+            Application.Run(new Start_form());
         }
     }
 }

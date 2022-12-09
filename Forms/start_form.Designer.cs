@@ -1,6 +1,6 @@
 ﻿namespace Ision
 {
-    partial class start_form
+    partial class Start_form
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,73 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(start_form));
-            this.label1 = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Start_form));
+            this.button_enter = new System.Windows.Forms.Button();
+            this.textBox_password = new System.Windows.Forms.TextBox();
+            this.textBox_login = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // button_enter
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.Location = new System.Drawing.Point(293, 188);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Логин";
+            this.button_enter.Location = new System.Drawing.Point(126, 99);
+            this.button_enter.Name = "button_enter";
+            this.button_enter.Size = new System.Drawing.Size(59, 25);
+            this.button_enter.TabIndex = 9;
+            this.button_enter.Text = "Вход";
+            this.button_enter.UseVisualStyleBackColor = true;
+            this.button_enter.Click += new System.EventHandler(this.Button_enter_Click);
+            // 
+            // textBox_password
+            // 
+            this.textBox_password.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox_password.Location = new System.Drawing.Point(103, 60);
+            this.textBox_password.Name = "textBox_password";
+            this.textBox_password.PasswordChar = '●';
+            this.textBox_password.Size = new System.Drawing.Size(104, 23);
+            this.textBox_password.TabIndex = 8;
+            // 
+            // textBox_login
+            // 
+            this.textBox_login.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.textBox_login.Location = new System.Drawing.Point(103, 20);
+            this.textBox_login.Name = "textBox_login";
+            this.textBox_login.Size = new System.Drawing.Size(104, 23);
+            this.textBox_login.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.Location = new System.Drawing.Point(285, 228);
+            this.label2.Location = new System.Drawing.Point(48, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 15);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 6;
             this.label2.Text = "Пароль";
             // 
-            // textBox1
+            // label1
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(340, 185);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(104, 23);
-            this.textBox1.TabIndex = 2;
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.Location = new System.Drawing.Point(56, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Логин";
             // 
-            // textBox2
-            // 
-            this.textBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox2.Location = new System.Drawing.Point(340, 225);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(104, 23);
-            this.textBox2.TabIndex = 3;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(363, 264);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(59, 25);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // start_form
+            // Start_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(284, 136);
+            this.Controls.Add(this.button_enter);
+            this.Controls.Add(this.textBox_password);
+            this.Controls.Add(this.textBox_login);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(300, 175);
             this.MinimumSize = new System.Drawing.Size(300, 175);
-            this.Name = "start_form";
+            this.Name = "Start_form";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ision";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_form_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,10 +109,10 @@
 
         #endregion
 
-        private Label label1;
+        private Button button_enter;
+        private TextBox textBox_password;
+        private TextBox textBox_login;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private Button button1;
+        private Label label1;
     }
 }
