@@ -54,6 +54,7 @@
             this.textBox_password.PasswordChar = '●';
             this.textBox_password.Size = new System.Drawing.Size(104, 23);
             this.textBox_password.TabIndex = 8;
+            this.textBox_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox_password_KeyDown);
             // 
             // textBox_login
             // 
@@ -62,6 +63,7 @@
             this.textBox_login.Name = "textBox_login";
             this.textBox_login.Size = new System.Drawing.Size(104, 23);
             this.textBox_login.TabIndex = 7;
+            this.textBox_login.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TextBox_login_KeyDown);
             // 
             // label2
             // 
@@ -102,6 +104,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ision";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_form_FormClosing);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Start_form_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
