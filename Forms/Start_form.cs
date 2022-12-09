@@ -1,3 +1,5 @@
+using Ision.Forms;
+
 namespace Ision
 {
     public partial class Start_form : Form
@@ -18,6 +20,10 @@ namespace Ision
             if (result == true)
             {
                 MessageBox.Show("¬ход успешный");
+
+                //Main_form newForm = new();
+                //newForm.Show();
+                //this.Hide();
             }
         }
 
@@ -26,6 +32,8 @@ namespace Ision
             Application.Exit();
         }
 
+
+        
         private void Start_form_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

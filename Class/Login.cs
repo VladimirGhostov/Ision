@@ -17,6 +17,7 @@ namespace Ision
             if (file_exist == false) // Если файл с данными не существует, то создаём его
             {
                 using StreamWriter writer = new(path, false); // Запись файла по пути path. False - перезапись файла, true - дописать в файл
+                File.SetAttributes(path, FileAttributes.ReadOnly | FileAttributes.Hidden);
                 int hash_log_toWrite = string.GetHashCode(login); // Записываем логин в виде хэша
                 int hash_pas_toWrite = string.GetHashCode(password); // Записываем пароль в виде хэша
                 writer.WriteLine(hash_log_toWrite); // Пишет в первую строку файла логин
