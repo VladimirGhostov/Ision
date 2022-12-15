@@ -104,7 +104,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ision";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Start_form_FormClosing);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Start_form_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 
